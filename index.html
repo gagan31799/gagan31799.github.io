@@ -586,15 +586,15 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="contact-form pt-30">
-                        <form id="contact-form" action="assets/contact.php">
+                        <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeCX6B3Ajl8cP-uTkMCfpPvryiS-I8Ig0aUXozHzA0WpmaBEA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
                             <div class="single-form">
-                                <input type="text" name="name" placeholder="Name">
+                                <input type="text" name="entry.702981216" id ="entry.702981216" placeholder="name">
                             </div> <!-- single form -->
                             <div class="single-form">
-                                <input type="email" name="email" placeholder="Email">
+                                <input type="email" name="entry.871482275" id ="entry.871482275" placeholder="Email">
                             </div> <!-- single form -->
                             <div class="single-form">
-                                <textarea name="message" placeholder="Message"></textarea>
+                                <textarea name="entry.1067832589" id ="entry.1067832589" placeholder="Message"></textarea>
                             </div> <!-- single form -->
                             <p class="form-message"></p>
                             <div class="single-form">
@@ -660,7 +660,14 @@
 
     <!--====== BACK TOP TOP PART ENDS ======-->
 
-
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript">var submitted=false;</script>
+    <script type="text/javascript">
+    $('#gform').on('submit', function(e) {
+      $('#gform *').fadeOut(2000);
+      $('#gform').prepend('Your submission has been processed...');
+      });
+    </script>
 
 
 
