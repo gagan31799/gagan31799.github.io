@@ -130,7 +130,7 @@ p {
   font-size: 15px;
   line-height: 48px;
   border-radius: 50px;
-  color: #fff;
+  color: blue;
   cursor: pointer;
   z-index: 5;
   -webkit-transition: all 0.3s ease-out 0s;
